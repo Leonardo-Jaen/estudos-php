@@ -1,9 +1,12 @@
+
 <?php
 
 
 require_once('config.php');
 
 
-$usuarios = $pdo->query('SELECT * FROM usuarios')->fetchALL();
+$where = ['id' => 2];
 
-var_dump($usuarios);
+$pdo->prepare("DELETE FROM usuarios WHERE id-:id")->execute($where);
+
+echo "Excluido com sucesso!";
