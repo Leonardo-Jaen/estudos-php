@@ -2,11 +2,11 @@
 <?php
 
 
-require_once('config.php');
+//require_once('config.php');
 
 
-$where = ['id' => 2];
+//$where = ['id' => 2];
 
-$pdo->prepare("DELETE FROM usuarios WHERE id-:id")->execute($where);
+//$pdo->prepare("DELETE FROM usuarios WHERE id-:id")->execute($where);
 
-echo "Excluido com sucesso!";
+//echo "Excluido com sucesso!";
